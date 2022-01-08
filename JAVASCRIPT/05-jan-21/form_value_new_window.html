@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+
+
+	<h1>Form values into new window</h1>
+
+
+	<form action="" name="myform">
+		<input type="text" name="fname" placeholder="First Name"><br>
+		<input type="text" name="lname" placeholder="Last Name"><br>
+		<input type="email" name="email" placeholder="email"><br>
+		<input type="text" name="number" placeholder="Mobile number"><br>
+		<textarea type="textbox" name="address" id="" cols="30" rows="10"></textarea><br>
+		<input type="textbox" name="address" placeholder="Address"><br>
+		Male:<input type="radio" name="gender" value="Male">
+		Female:<input type="radio" name="gender" value="female"><br>
+		<input type="checkbox" name="checkbox"><label for="">Fishing</label><input type="checkbox" name="checkbox"><label for="">Sports</label><input type="checkbox" name="checkbox"><label for="">Gameing</label><input type="checkbox" name="checkbox"><label for="">Traveling</label><br><br>
+		<button type="button" onclick="display()">Click here</button>
+	</form>
+	<script>
+		function display(){
+			var first = document.myform.fname.value;
+			var last = document.myform.lname.value;
+			var fullname = first + " " + last;
+			var mail = document.myform.email.value;
+			var numb = document.myform.number.value;
+			// var addre = document.myform.addredss.value;
+			// alert(first);
+			// alert(last);
+			var mywin = window.open("", "", "height=300, width=300");
+			mywin.document.write("<h1>This is new window</h1>");
+			mywin.document.write("<p>First name is: " + first + "</p>");
+			mywin.document.write("<p>last name is: " + last + "</p>");
+			mywin.document.write("<p>fullname name is: " + fullname + "</p>");
+			mywin.document.write("<p>Your email :" + mail + "</p>");
+			mywin.document.write("<p> Your Mobile number:" + numb + "</p>")
+			//mywin.document.write("<p> Your addredss:" + addre + "</p>")
+			// 
+		}
+	</script>
+</body>
+</html>

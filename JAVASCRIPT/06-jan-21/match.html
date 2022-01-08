@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<p>match() searches for a match against a regular expression.</p>
+	<p>Do a global, case-insensitive, search for "ain":</p>
+
+	<div id="demo"></div>
+	
+
+
+	<script>
+		var x = "the rain in SPAIN maintaly in the plain";
+		var result = x.match("/ain/gi");
+
+		document.getElementById("demo").innerHTML = result;
+	</script>
+</body>
+</html>

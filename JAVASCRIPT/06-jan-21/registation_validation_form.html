@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h2>Student Registation form</h2>
+	<div id="demo"></div>
+	<form action="" name="myform">
+		Name: <input type="text" name="fullname" placeholder="Enter your fullname"><br><br>
+		Father Name: <input type="text" name="fathername" placeholder="Enter your fathername"><br><br>
+		Email: <input type="email" name="email" placeholder="Enter your email"><br><br>
+		Gender: <input type="radio" name="gender" value="Male">Male <input type="radio" name="gender" value="female">Female<br><br>
+		Address:
+		<textarea name="textbox" id="" cols="30" rows="10"></textarea><br><br>
+		Hobby: <input type="checkbox" name="checkbox"><label for="">Fishing</label><input type="checkbox" name="checkbox"><label for="">Sports</label><input type="checkbox" name="checkbox"><label for="">Gameing</label><input type="checkbox" name="checkbox"><label for="">Traveling</label><br><br>
+		District:
+		<select name="district" id="">
+			<option>Select one</option>
+			<option>Dhaka</option>
+			<option>Khulna</option>
+			<option>Rangpure</option>
+		</select><br><br>
+		<button type="button" onclick="show()">Click here</button>
+	</form>
+
+	<script>
+		
+		function show() {
+			var nam = document.myform.fullname.value;
+			var ftnam = document.myform.fathername.value;
+			var emi = document.myform.email.value;
+			var gen = document.myform.gender.value;
+			var add = document.myform.textbox.value;
+			var ckbox = document.myform.checkbox.value;
+			var dist = document.myform.district.value;
+
+			var newwin = window.open("", "", "height=500, width=400")
+		    newwin.document.write("Your fullname: " + nam +  "<br>");
+		    newwin.document.write("Your fathername: " + ftnam +  "<br>");
+		    newwin.document.write("Your email: " + emi  + "<br>");
+		    newwin.document.write("Your gender: " + gen +  "<br>");
+		    newwin.document.write("Your textbox: " + add +  "<br>");
+		    newwin.document.write("Your checkbox: " + ckbox +  "<br>");
+		    newwin.document.write("Your district: " + dist +  "<br>");
+		}
+		
+
+
+	</script>
+</body>
+</html>

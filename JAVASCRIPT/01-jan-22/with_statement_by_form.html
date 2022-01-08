@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<h2>Form</h2>
+	<p id="demo"></p>
+
+	<form action="" name="myform">
+		<input type="text" name="name" placeholder="Enter your name"><br><br>
+		<input type="text" name="contact" placeholder="Enter your content number"><br><br>
+		<textarea name="remark" id="" cols="30" rows="1" placeholder="remark"></textarea><br><br>
+		<input type="checkbox"><label for="" name="box">NT</label>
+		<input type="checkbox" name="box"><label for="">IAD</label>
+		<input type="checkbox" name="box"><label for="">DDD</label>
+		<input type="checkbox" name="box"><label for="">ESAD</label><br><br>
+		<select name="location" id="">
+			<option>Select one</option>
+			<option>Banani</option>
+			<option>Dhanmondi</option>
+			<option>Mirpure</option>
+		</select><br><br>
+		<input type="button" onclick="getData()" value="SEND">
+	</form>
+	
+
+
+	<script>
+		// var x = prompt("Enter a number:", "");
+		function getData() {
+			with(document.myform) {
+				var nam = name.value;
+				var con = contact.value;
+				var rem = remark.value;
+				var bo  = box.value;
+				var loc = location.value
+			}
+			var data = "";
+			data += "Name: " + nam + "<br>";
+			data += "Contact: " + con + "<br>";
+			data += "Remark: " + rem + "<br>";
+			data += "Checkbox: " + bo + "<br>";
+			data += "Location: " + loc + "<br>";
+			document.getElementById("demo").innerHTML = data;
+		}
+
+	</script>
+</body>
+</html>

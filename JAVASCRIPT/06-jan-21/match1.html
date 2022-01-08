@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing, elit. Corporis repudiandae ullam tempora, a odit soluta nihil doloribus! Voluptas, mollitia impedit deserunt, magnam minus quae totam, obcaecati vitae dignissimos dolorem, cupiditate!</p> -->
+
+	<div id="demo"></div>
+	
+
+
+	<script>
+		let text = Lorem ipsum dolor sit amet consectetur adipisicing, elit. Corporis repudiandae ullam tempora, a odit soluta nihil doloribus! Voluptas, mollitia impedit deserunt, magnam minus quae totam, obcaecati vitae dignissimos dolorem, cupiditate!;
+		var result = text.match(/rem/gi);
+
+		document.getElementById("demo").innerHTML = result;
+	</script>
+
+	<!-- <script>
+		let text = "The Brown fox Jump over the lazy dog";
+		var result = text.replace(/brown/i, "black");
+		alert(result);
+	</script> -->
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>With statement</h1>
+	<div id="show"></div>
+
+	<form action="" name="myform">
+		<input type="text" name="fullname" placeholder="fullname"> <br>
+		Gender:
+		<input type="radio" value="Male" name="gender"> Male
+		<input type="radio" value="female" name="gender"> Frmale<br>
+		District: <br>
+		<select name="district" id="">
+			<option name="district" value="">Dhaka</option>
+			<option name="district" value="">Sylhet</option>
+			<option name="district" value="">Khulna</option>
+			<option name="district" value="">Jashore</option>
+		</select><br>
+		<textarea name="address" id="" cols="30" rows="10" placeholder="Address"></textarea><br>
+		<input type="button" value="SEND" onclick="getData()">
+	</form>
+
+
+	<script>
+		function getData(){
+			with(document.myform){
+				var full = fullname.value;
+				var gen = gender.value;
+				var dist = district.value;
+				var add = address.value;
+				// alert(full);
+			}
+			var data;
+			data += "name:" + full + "<br>";
+			data += "Gender:" + gen + "<br>";
+			data += "District:" + dist + "<br>";
+			data += "Address:" + add + "<br>";
+
+			document.getElementById('show').innerHTML = data;
+		}
+	</script>
+
+	<!-- <script>
+		function getData() {
+			with(document.myform) {
+			var name = fullname.value;
+			var radio = gender.value;
+			var zila = district.value;
+			var add =address.value;
+			}
+			var data;
+			data += "Fullname: " + name + "<br>";
+			data += "Gender: " + radio + "<br>";
+			data += "document: " + zila + "<br>";
+			data += "Address: " + add + "<br>"
+
+			document.getElementById("show").innerHTML = data;
+		}
+	</script> -->
+</body>
+</html>

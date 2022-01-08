@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=	, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<div id="show"></div>
+	<form action="" name="myform">
+		<input type="email" name="email" placeholder="Enter your email"><br><br>
+		<input type="password" name="password" placeholder="Enter your password"><br><br>
+		<input type="button" onclick="display()" value="CLICK HERE">
+	</form>
+
+	<script>
+		function display() {
+			var emi = document.myform.email.value;
+			var pass = document.myform.password.value;
+			var pattern = email.search(/[a-zA-Z]+@[a-zA-Z]+\.[a-zA-Z]{2,3}/);
+			var false;
+
+			if(pattern==-1) {
+				alert("Email is invalid");
+				return false;
+			}else{
+				status true;
+			}
+			if(pass<8){
+				alert("Password must be 8 charecter")
+				return false;
+			}else{
+				return true;
+			}
+			if(status==true){
+			 	alert ("All data are validted");
+			 }
+
+			// var document.write("Your email:" + emi);
+			// var document.write("password:" + pass);
+		}
+	</script>
+</body>
+</html>

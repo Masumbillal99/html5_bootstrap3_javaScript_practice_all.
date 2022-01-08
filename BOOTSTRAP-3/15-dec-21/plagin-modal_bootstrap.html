@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Button Tag</title>
+	<!-- Latest compiled and minified CSS -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+		<!-- jQuery library -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+		<!-- Latest compiled JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container">
+		<div class="modal-content">
+			<div class="modal-header"><button type="sumit" class="close" data-dismiss="modal">&times;</button>
+				<h4 class="media">Mpdel heder</h4>
+			</div>
+		</div>
+		<h2>Modal Example</h2>
+  <!-- Trigger the modal with a button -->
+  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+
+
+  <br><br>
+  <div class="container">
+  	<button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">LOGIN</button>
+  	<!-- myModal area -->
+  	<div class="modal" id="myModal">
+  		<div class="modal-dialog">
+  			<div class="modal-content">
+  				<div class="modal-header">
+  					<button class="close" class="" data-dismiss="modal">&times;</button>
+  					login form
+  				</div>
+  				<div class="modal-body">
+  					<form action="">
+  						<div class="form-group">
+  							<label for="">Email:</label>
+  							<input type="email" class="form-control" placeholder="Enter your email">
+  						</div>
+  						<div class="form-group">
+  							<label for="">Password:</label>
+  							<input type="Password" class="form-control" name="Password" placeholder="Enter your Password">
+  						</div>
+  					</form>
+  				</div>
+  				<div class="modal-body">
+  					Body content will be here
+  				</div>
+  				<div class="modal-footer">
+  					<button class="btn btn-success" data-dismiss="modal">Close</button>
+  				</div>
+  			</div>
+  		</div>
+  	</div>
+  	<!-- myModal edd -->
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Calculate the factorial of a number</h1>
+	<div id="demo"></div>
+	
+
+
+	<script>
+		var x = prompt("Enter a number", "")
+		function factorial(x){
+			if(x===0) {
+				return 1;
+			}
+			return x * factorial(x-1);
+		}
+		document.getElementById('demo').innerHTML ="Factorial value is: " + factorial(x);
+	</script>
+</body>
+</html>

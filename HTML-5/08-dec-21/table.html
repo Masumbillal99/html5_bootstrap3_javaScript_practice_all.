@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		table{
+			border-collapse: collapse;
+		}
+		table, th, td{
+			border: 1px solid black;
+		}
+		th, td{
+			width: 50px;
+		}
+		thead{
+			background-color: #69f3BD;
+			color: #fff
+		}
+		tbody{
+			background-color: #EC9696
+		}
+	</style>
+</head>
+<body>
+	<h1>Simple Table</h1>
+
+	<table>
+		<tr>
+			<th>ID</th>
+			<td>Name</td>
+		</tr>
+		<tr>
+			<th>5010</th>
+			<td>Masum Billal</td>
+		</tr>
+	</table>
+	<h1>simple table 2</h1>
+	<table>
+		<tr>
+			<td colspan="2">A</td>
+			<td>C</td>
+			<td rowspan="3">D</td>
+		</tr>
+		<tr>
+			<td rowspan="2">E</td>
+			<td>F</td>
+			<td>G</td>
+			
+		</tr>
+		<tr>
+			<td>J</td>
+			<td>K</td>
+			
+		</tr>
+		<tr>
+			<td>M</td>
+			<td colspan="3">N</td>
+		</tr>
+	</table>
+
+
+	<h1>Table grouping</h1>
+	<table>
+		<thead>
+			<tr>
+				<td>ID</td>
+				<td>Name</td>
+				<td>Address</td>
+				<td>Phone</td>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Saiful Islam</td>
+				<td>Mohmmadpur</td>
+				<td>01964</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Alamin</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</tbody>
+		<tfoot>
+			
+		</tfoot>
+	</table>
+
+	<h1>Call group</h1>
+</body>
+</html>

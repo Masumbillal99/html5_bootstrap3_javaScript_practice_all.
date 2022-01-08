@@ -1,0 +1,66 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+</head>
+<body>
+	<p id="show">Content will display here</p>
+
+	<form action="" name="myform">
+		<label>Fullname:</label>
+		<input type="text" name="fullname" placeholder="Enter your fullname"><br><br>
+		<label>Email:</label>
+		<input type="email" name="email" placeholder="Enter your email"><br><br>
+		<label>Mobile number:</label>
+		<input type="text" name="number" placeholder="Enter your mobile number"><br><br>
+		<label>Textarea</label>
+		<input type="text" name="address" placeholder="Enter your address"><br><br>
+		<label>Gender</label>
+		<input type="radio" name="gender" value="male"><label>Male</label><input type="radio" name="gender" value="female"><label>Female</label><br><br>
+		<label>Hobby:</label>
+		<input type="checkbox" name="checkbox">Fishing <input type="checkbox" name="checkbox">Traveling <input type="checkbox" name="checkbox">Watching TV <br><br>
+		<label>District</label>
+		<select name="district">
+			<option>Dhaka</option>
+			<option>Khulna</option>
+			<option>Rangpure</option>
+			<option>Barishal</option>
+		</select><br><br>
+		<input type="button" name="button" onclick="show()" value="SUBMIT">
+	</form>
+
+	<script>
+		function show() {
+			var name = document.myform.fullname.value;
+			var emi = document.myform.email.value;
+			var num = document.myform.number.value;
+			var text = document.myform.address.value;
+			var gen = document.myform.gender.value;
+			var box = document.myform.checkbox.value;
+			var dis = document.myform.district.value;
+
+			var a = document.myform.box;
+			for (i=0; i<a.length; i++) {
+				if(a[i].checked == true);
+				return true;
+			}
+			return false;
+
+
+			var newwin = window.open("", "", "height=500; width=500");
+			newwin.document.write("Yur fullname is :" + name + "<br>");
+			newwin.document.write("Yur email is :" + emi + "<br>");
+			newwin.document.write("Yur number is :" + num + "<br>");
+			newwin.document.write("Yur address is :" + text + "<br>");
+			newwin.document.write("Yur checkbox is :" + gen + "<br>");
+			newwin.document.write("Yur box is :" + a + "<br>");
+			newwin.document.write("Yur district is :" + dis + "<br>");
+			// alert(name);
+		}
+
+	</script>
+</body>
+</html>

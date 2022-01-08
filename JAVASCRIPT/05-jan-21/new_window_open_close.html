@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+
+	<form action="" name="myform">
+		<input type="text" name="fname" placeholder="First Name"><br>
+		<input type="text" name="lname" placeholder="Last Name"><br>
+		<button type="button" onclick="win_display()">Open</button>
+		<button type="button" onclick="win_close()">Close</button>
+	</form>
+	
+
+
+	<script>
+		var mywin;
+		function display(){
+			var first = document.myform.fname.value;
+			var last = document.myform.lname.value;
+
+			mywin = window.open("", "", "height=300, width=400, left=350");
+			mywin.document.write("<h1>This is a new window</h1>");
+			mywin.document.write("<p> This is :" + first + "</p>")
+		}
+
+		function win_close(){
+			mywin.close();
+		}
+	</script>
+</body>
+</html>
