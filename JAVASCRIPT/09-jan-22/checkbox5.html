@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+	<h1>checkbox</h1>
+
+	<form action="" name="myform">
+		<label for="">education:</label>
+		SSC <input type="checkbox" name="edu[]" value="SSC">
+		HSC <input type="checkbox" name="edu[]" value="HSC">
+		DIPLOMA <input type="checkbox" name="edu[]" value="DIPLOMA">
+		BSC <input type="checkbox" name="edu[]" value="BSC"><br>
+		<label for="">Gender</label>
+		Male <input type="radio" name="gender" value="male">
+		Female <input type="radio" name="gender" value="female"><br>
+		<input type="button" value="Click here" onclick="show()">
+	</form>
+
+	<script>
+		function show(){
+			var box = "";
+			var len = myform.length;
+
+			for(i=0; i<len-3; i++){
+				if(myform.elements[i].checked){
+					box += myform.elements[i].value + ",";
+				}
+			}
+			document.write(box);
+		}
+	</script>
+</body>
+</html>

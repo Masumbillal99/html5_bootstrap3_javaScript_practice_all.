@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h1>Email validation</h1>
+	<form action="" name="myform">
+		<input type="text" name="mail" placeholder="Enter mail">
+		<input type="password" name="password" placeholder="Enter password">
+		<input type="button" onclick="display()" value="Click here">
+	</form>
+
+	<script>
+		function display(){
+			var email = document.myform.mail.value;
+			var pattern = email.search(/[a-zA-Z][0-9]+@[a-zA-Z]+\.[a-zA-Z]/);
+			// document.write(pattern)
+			var pass = document.myform.password.value.length;
+			document.write(pass);
+			var status = false;
+
+			if(pattern === -1){
+				document.write("please input valid mail");
+				return false;
+			}else{
+				status = true;
+			}
+			if(pass <= 8 && pass >= 10){
+				document.write("password must be 8 charcter");
+				return false;
+			}else{
+				status = true;
+			}
+			if (status = true){
+				document.write("all are valid");
+			}
+		}
+	</script>
+
+	
+</body>
+</html>

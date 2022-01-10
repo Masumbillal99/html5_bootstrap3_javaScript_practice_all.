@@ -6,6 +6,8 @@ $p = 50.59;
 $q = ["apple", "orange"];
 $b = true;
 $n = null;
+//Object
+//Resource
 
 var_dump($x); //var_dump says datatype,length, and output
 echo "<br>";

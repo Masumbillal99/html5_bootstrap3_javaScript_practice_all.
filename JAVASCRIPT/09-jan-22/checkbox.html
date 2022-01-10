@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	
+
+	<form action="" name="myform">
+		<label for="">Hobby</label><br>
+		Traveling <input type="checkbox" name="hoby[]" value="Traveling">
+		fishing <input type="checkbox" name="hoby[]" value="fishing">
+		cricket <input type="checkbox" name="hoby[]" value="cricket">
+		football <input type="checkbox" name="hoby[]" value="football">
+		gameing <input type="checkbox" name="hoby[]" value="gameing"><br>
+
+		<label for="">gender</label>
+		Male<input type="radio" name="gender" value="male">
+		Female <input type="radio" name="gender" value="female">
+	</form><br>
+
+	<input type="button" value="Click here" onclick="show()">
+
+	<script>
+		function show(){
+			var box = "";
+			var len = myform.length;
+			for(i=0; i<len-2; i++){
+				if(myform.elements[i].checked){
+					box += myform.elements[i].value + ",";
+				}
+			}
+			document.write(box);
+
+		}
+	</script>
+</body>
+</html>
